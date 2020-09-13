@@ -1,0 +1,15 @@
+Pages: 
+<button type="button" [routerLink]="['home']" routerLinkActive="active">Home</button>
+<button type="button" [routerLink]="['parent']" routerLinkActive="active">Parent (& Child)</button>
+<button type="button" [routerLink]="['r1']" routerLinkActive="active">R1</button>
+<button type="button" [routerLink]="['r2']" routerLinkActive="active">R2</button>
+
+<hr/>
+
+Actions: 
+<button type="button" (click)="sendEvent()">Simulate message from child component</button>
+<button type="button" (click)="updateResource()">Update resource</button>
+
+<hr/>
+
+<router-outlet></router-outlet>
